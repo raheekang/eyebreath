@@ -1,0 +1,532 @@
+/*비쥬얼 영역 시작*/
+div#visual_wrap{
+    width: 100%;
+    min-width: 768px;
+    height: 960px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-top:115px;
+    overflow: hidden;
+}
+ul#visual_list{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*opacity: 0;*/
+    /*display: none;*/
+}
+ul#visual_list>li{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    left:0px;
+    top:0px; 
+}
+ul#visual_list>li:nth-child(1){
+    background: url('/eyebreath/images/main_img/main_img_001.jpg') no-repeat center; 
+    background-size:cover; 
+}
+ul#visual_list>li:nth-child(2){
+    background:url('/eyebreath/images/main_img/main_img_002.jpg') no-repeat center; 
+    background-size:cover; 
+}
+ul#visual_list>li:nth-child(3){
+    background:url('/eyebreath/images/main_img/main_img_003.jpg') no-repeat center; 
+    background-size:cover; 
+}
+section.visual{
+    width:1200px;
+    height:auto;
+    margin:0px auto;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+div.visual_text{
+    width: 66.66%;
+    height: auto;
+    position: absolute;
+    left: 16.66%;
+    top: 180px;
+}
+.main_text{
+    font: bold 55px 'Kanit';
+    margin-bottom: 40px;
+    color: white;
+    
+}
+.sub_text{
+    font: normal 20px 'Kanit KR';
+    margin-bottom: 100px;
+    color: white;
+    
+    line-height: 200%;
+}
+.btn_visual{
+    width: 160px;
+    height: 40px;
+    margin-top: 50px;
+    background:rgba(255, 255, 255, 0.7);
+    border: 1px rgb(255, 255, 255);
+    border-radius: 30px;
+    position: absolute;
+    left: 16.66%; /*200*/
+    top: 400px;
+
+}
+.btn_visual{
+    font:normal 0.875em 'Kanit KR'; 
+    color: rgb(0, 0, 0)
+}
+div.visual_text>a{
+    font: normal 14px 'Kanit KR';
+    color: white;
+    display: block;
+    line-height: 200%;
+    text-decoration:underline;
+}
+button#prev_btn{
+    width: 72px;
+    height: 72px;
+    background: none; 
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    margin-top: -36px;
+    border-radius: 10px 0px 0px 10px;
+    color: #ffffff;
+}
+button#prev_btn:hover{
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 150px;
+}
+button#next_btn{
+    width: 72px;
+    height: 72px;
+    background: none; 
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    margin-top: -36px;
+    border-radius: 10px 0px 0px 10px;
+    color: #ffffff;
+}
+button#next_btn:hover{
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 150px;
+}
+
+/*컨텐츠영역시작*/
+div#introduce_wrap{
+    width: 100%;
+    min-width: 768px;
+    height: 380px;
+    background: #697759;
+}
+section#introduce{
+    width:63.15%;
+    height: 100%;
+    margin:0px auto;
+    background: url('/eyebreath/images/main_img/phone.png') no-repeat right 0px ;   
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+div#introduce_text{
+    width:570px;
+    height:auto;
+    position: absolute;
+    left:10.52%; /*60*/
+    top: 55px;
+    
+}
+.contents_main_text{
+    font: bold 2.125em 'Nanum Gothic KR';        
+    color: white;
+    margin-bottom: 40px;
+}
+.contents_sub_text{
+    font: normal 1em 'Nanum Gothic KR';    
+    color:white;
+    margin-bottom: 40px;
+}
+.btn_text{
+    font: normal 0.875em 'Nanum Gothic KR';   
+    color: rgb(255, 255, 255); 
+    background: -moz-linear-gradient(top,    rgb(100, 100, 100) 0%,rgba(100, 100, 100, 0.8) 60%,rgba(100, 100, 100, 0.7) 100%);
+    background: -webkit-linear-gradient(top, rgb(100, 100, 100) 0%,rgba(100, 100, 100, 0.8) 60%,rgba(100, 100, 100, 0.7) 100%);
+    background: linear-gradient(to bottom,    rgb(100, 100, 100) 0%,rgba(100, 100, 100, 0.8) 60%,rgba(100, 100, 100, 0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+    box-shadow: 3px 3px 2px rgba(48, 48, 48, 0.3);
+    border: 1px rgb(255, 255, 255);
+    border-radius: 30px;
+    width: 160px;
+    height: 40px;
+}
+div#newitem_wrap{
+    width: 100%;
+    min-width: 768px;
+    height:auto;
+    margin-top: 100px;
+}
+section#newitem{
+    width:1200px;
+    height: 100%;
+    margin: 0px auto;
+    padding: 90px 0px;
+    box-sizing:border-box;
+}
+div#newitem_title_wrap{
+    text-align: center;
+    margin-bottom:50px; 
+}
+p.newitem_title{
+    font: bold 40px 'Nanum Gothic KR';
+    color: #000000;
+}
+p.newitem_subtitle{
+    font: normal 16px 'Nanum Gothic KR';
+    color: #000000;
+}
+div#newitem_list{
+    width: 100%;
+    height: 82.56%;
+    /*background: red;*/
+}
+ul#newitem_text{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around; 
+}
+ul#newitem_text>li{
+    width:30%;
+    margin-bottom:30px; 
+}
+p.newitem_image{
+    width: 100%;
+    height:auto;
+    margin-bottom:10px; 
+}
+p.newitem_image img{
+    width:100%; 
+}
+p.newitem_brand{
+    font: bold 14px 'Nanum Gothic KR';
+    color: black;
+}
+p.newitem_name{
+    font: normal 14px 'Nanum Gothic KR';
+    color: black;
+}
+p.newitem_price{
+    font: bold 14px 'Nanum Gothic KR';
+    margin-top: 10px;
+}
+div#item_ad_wrap{
+    width: 100%;
+    min-width: 768px;
+    height: 440px;
+    background: url('/eyebreath/images/main_img/bg_img.jpg') no-repeat center fixed;
+    background-size:cover;
+    display: block;
+    margin-top: 100px;
+}
+div#item_ad{
+    width:1200px;
+    height: 100%;
+    margin:0px auto;
+    /*background:blue;*/  
+}
+div#item_ad_sun{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background: url('/eyebreath/images/main_img/sun.png') no-repeat center;
+    background-position: center 60px;
+    padding-top: 170px;
+    box-sizing:border-box;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+div#item_ad_gla{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background: url('/eyebreath/images/main_img/gla.png') no-repeat center;
+    background-position: center 60px;
+    padding-top: 170px;
+    box-sizing:border-box;
+}
+section#item_text{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+div#item_ad_sun::after{
+    content: "";
+    width: 10px;
+    height: 330px;
+    display: block;
+    border-right: solid 5px rgba(255, 255, 255,0.7);
+    position: absolute;
+    right: 0px;
+    top: 50px;
+}
+section#item_text2{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+p.item_ad_title{
+    text-align: center;
+    font: bold 2.625em 'Nanum Gothic KR';
+    color: white;
+    margin-bottom: 20px;
+}
+p.item_ad_sub{
+    text-align: center;
+    font: normal 1em 'Nanum Gothic KR';
+    color: white;
+    margin-bottom: 30px;
+}
+.item_ad_btn{
+    font: normal 1em'Nanum Gothic KR';
+    color: white; 
+    background: -moz-linear-gradient(top,    rgb(68, 68, 68) 0%,rgba(68, 68, 68, 0.7) 60%,rgba(68, 68, 68, 0.5) 100%);
+    background: -webkit-linear-gradient(top,  rgb(68, 68, 68) 0%,rgba(68, 68, 68, 0.7) 60%,rgba(68, 68, 68, 0.5) 100%);
+    background: linear-gradient(to bottom,    rgb(68, 68, 68) 0%,rgba(68, 68, 68, 0.7) 60%,rgba(68, 68, 68, 0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    border: 1px rgb(77, 77, 77);
+    border-radius: 30px;
+    width: 135px;
+    height: 32px;
+}
+div#eyestyle_wrap{
+    width: 100%;
+    min-width: 768px;
+    height: auto;
+    margin-top: 100px;
+}
+section#eyestyle{
+    width: 1200px;
+    height: 100%;
+    margin: 0px auto;
+    padding: 70px 0px;
+    box-sizing:border-box;
+}
+
+div#eyestyle_title_wrap{
+    text-align: center;
+}
+p.eyestyle_title{
+    font: bold 40px 'Nanum Gothic KR';
+    color: black;
+}
+p.eyestyle_subtitle{
+    font: normal 14px 'Nanum Gothic KR';
+    color: black;
+    margin-bottom: 30px;
+}
+div#eyestyle_list{
+    width: 100%;
+    height: 90%;
+    margin: 0px auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-between; 
+    /*background: yellow;*/
+}
+div#eyestyle_list_001{
+    width: 28.91%;
+}
+div#eyestyle_list_002{
+    width: 37.75%;
+}
+div#eyestyle_list_003{
+    width: 29%;
+}
+ul.eyestyle_text{
+    width:100%;
+    height:auto;   
+}
+ul.eyestyle_text img{
+    width:100%; 
+}
+div#eyestyle_list li{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-bottom:25px; 
+}
+p.eyestyle_image{
+    width: 100%;
+    height:auto;
+}
+p.eyestyle_image img{
+    width: 100%;
+}
+p.eyestyle_brand{
+    font: normal 0.75em 'Nanum Gothic KR';
+    color: rgb(255, 255, 255);
+    position:absolute;
+    left:10px; 
+    bottom:30px;
+}
+p.eyestyle_name{
+    font: normal 0.75em 'Nanum Gothic KR';
+    color: rgb(255, 255, 255);
+    position:absolute;
+    left:10px; 
+    bottom:10px; 
+}
+
+div#acc_wrap{
+    width: 100%;
+    min-width: 768px;
+    height: 293px;
+    background: url('/eyebreath/images/main_img/add_ad.jpg') no-repeat center ;
+    background-size:cover;
+    margin-top: 100px;
+}
+section#acc{
+    width: 1200px;
+    height: 100%;
+    margin: 0px auto;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*background: green;*/
+}
+div#acc_text{
+    width:41%;
+    height: auto;
+    position: absolute;
+    left: 5%; /*60*/
+    top: 45px;
+    /*background: darkblue;*/
+}
+div#acc_view{
+    width: 17%;
+    height: 70px;
+    position: absolute;
+    right: 6.66%;
+    top: 150px;
+    /*background: darkcyan;*/
+}
+p.acc_title{
+    font: bold 4.375em 'Nanum Gothic KR';
+    color: white;
+    /*padding-top: 69px;*/
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+p.acc_sub{
+    font: normal 1em 'Nanum Gothic KR';
+    color: white;
+    line-height: 180%;
+}
+p.acc_sub2{
+    font: normal 1em 'Nanum Gothic KR';
+    color: white;
+}
+.acc_btn{
+    font: normal 1em 'Nanum Gothic KR';
+    color: rgb(255, 255, 255); 
+    background: -moz-linear-gradient(top,    rgb(100, 100, 100) 0%,rgba(100, 100, 100, 0.8) 60%,rgba(100, 100, 100, 0.7) 100%);
+    background: -webkit-linear-gradient(top, rgb(100, 100, 100) 0%,rgba(100, 100, 100, 0.8) 60%,rgba(100, 100, 100, 0.7) 100%);
+    background: linear-gradient(to bottom,    rgb(100, 100, 100) 0%,rgba(100, 100, 100, 0.8) 60%,rgba(100, 100, 100, 0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+    box-shadow: 3px 3px 2px rgba(48, 48, 48, 0.3);
+    border: 1px rgb(255, 255, 255);
+    border-radius: 30px;
+    width: 88.88%;
+    height: 57.14%;
+    position: absolute;
+    left: 1.25%;
+    top: 40px;
+}
+div#footer_wrap{
+    width: 100%;
+    min-width: 768px;
+    height: 234px;
+    background: black;
+}
+footer{
+    width:1200px;
+    height:100%;
+    margin:0px auto;
+    position:relative;
+    left:0px;
+    top:0px; 
+}
+ul#footer_contents{
+    width: 81.66%;
+    height: 12.82%;
+    margin: 0px auto;
+    padding-top: 50px;
+    /*background: gold;*/
+}
+ul#footer_contents>li{
+    width:14.2%;    
+    float: left;
+    text-align:center;
+}
+ul#footer_contents>li>a{
+    font: normal 0.875em 'Nanum Gothic KR';
+    color: white;
+}
+div#footer_comment{
+    width: 37%;
+    height: 34.61%;
+    margin: 0px auto;
+    padding-top: 50px;
+    /*background: firebrick;*/
+}
+p#comment{
+    font: normal 0.875em 'Nanum Gothic KR';
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+    section.visual,section#introduce,section#newitem,div#item_ad,section#eyestyle,section#acc,footer{
+        width: 100%;
+    }
+    section#introduce{
+        font-size: 95%;
+    }
+    div#item_ad,section#acc{
+        font-size: 90%;
+    }
+    ul.eyestyle_text,footer,div#item_ad,div#eyestyle_list{
+        font-size: 80%;
+    }
+}
+
+
+@media screen and (max-width:980px) {
+    section#introduce{
+        width: 100%;
+    }
+    div#introduce_text{
+        width: 47.5%;
+    }
+    section#introduce,footer{
+        font-size: 75%;
+    }
+}
+

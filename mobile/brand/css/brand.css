@@ -1,0 +1,595 @@
+section#join_event{
+    width: 100%;
+    height: 60px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+ul#join_event_list{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    float: left;
+}
+ul#join_event_list>li{
+    width: 100%;
+    height: 100%;
+}
+ul#join_event_list>li:nth-child(1){
+    background: url('/eyebreath/mobile/brand/images/top1.jpg') no-repeat center; 
+    background-size:cover; 
+    border-radius: 7px;
+}
+ul#join_event_list>li:nth-child(2){
+    background: url('/eyebreath/mobile/brand/images/top2.jpg') no-repeat center; 
+    background-size:cover; 
+}
+ul#join_event_list>li:nth-child(3){
+    background: url('/eyebreath/mobile/brand/images/top3.jpg') no-repeat center; 
+    background-size:cover; 
+}
+p.join_event_title a{
+    width: auto;
+    height: auto;
+    font: bold 3.4667vw 'Nanum Gothic KR';
+    color: white;
+    position: absolute;
+    top: 21.66%; /*13px*/
+    left: 7.2%; /*27px*/
+}
+p.join_event_sub a{
+    width: auto;
+    height: auto;
+    font: normal 2.9333vw 'Nanum Gothic KR';
+    color: white;
+    position: absolute;
+    top: 58.33%;/*35px*/
+    left: 7.2%; /*27px*/
+}
+p.join_event_image{
+    width: 16%; /*60px*/
+    height: 16%;
+    position: absolute;
+    top: 0px;
+    left: 63.46%; /*238px*/
+}
+p.join_event_image img{
+    width: 100%;
+    height: auto;
+}
+
+section#event001{
+    width: 100%;
+    height: 200px;
+    /* background: red; */
+    border-bottom: solid 1px #828282;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+div#event_inner1{
+    width: 100%;
+    height: 150px; /*150px*/
+    background: url('/eyebreath/mobile/brand/images/event01.jpg') no-repeat center;
+    background-size: cover;
+    margin-top: 20px;
+    position: relative;
+    top:0px;
+    left: 0px;
+    text-align: center;
+}
+p.event_name{
+    width: 60px; /*60px*/
+    height: auto;
+    background-color:#24B0C3 ;
+    font: normal 2.1333vw 'Nanum Gothic KR';
+    position: absolute;
+    top: 134px; /*136px*/
+    left: 1.33%; /*5px*/
+    border-radius: 3px;
+
+}
+p.event_day{
+    width: 130px;/*110px*/
+    height: auto;
+    background-color: #2451C3;
+    font:normal 2.1333vw 'Nanum Gothic KR' ;
+    position: absolute;
+    top: 134px; /*136px*/
+    left: 20%; /*75px*/
+    border-radius: 3px;
+}
+div.event_main{
+    width: 100%;
+    height: auto;
+    /* background: pink; */
+    margin-top: 15px;
+}
+p.event_title{
+    font: bold 3.8vw 'Nanum Gothic KR';
+    color: black;
+}
+section#event002{
+    width: 100%;
+    height: 200px;
+    /* background: blue; */
+    margin-bottom: 30px;
+    border-bottom: solid 1px #828282;
+}
+div#event_inner2{
+    width: 100%;
+    height: 150px; /*150px*/
+    background: url('/eyebreath/mobile/brand/images/event02.jpg') no-repeat center;
+    background-size: cover;
+    margin-top: 20px;
+    position: relative;
+    top:0px;
+    left: 0px;
+    text-align: center;
+}
+
+section#eyemaker{
+    width: 100%;
+    height: 125px;
+    /* background: blueviolet; */
+    border-bottom: solid 1px #828282;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+ul#eyemaker_list{
+    width: 100%;
+    height: 70px; /*70px*/
+    position: relative;
+    top:0px;
+    left: 0px;
+    float: left;
+}
+ul#eyemaker_list>li{
+    width: 100%;
+    height: 100%;
+}
+ul#eyemaker_list>li:nth-child(1){
+    background: url('/eyebreath/mobile/brand/images/eyemaker01.jpg') no-repeat center; 
+    background-size:cover; 
+}
+ul#eyemaker_list>li:nth-child(2){
+    background: url('/eyebreath/mobile/brand/images/eyemaker02.jpg') no-repeat center; 
+    background-size:cover; 
+}
+ul#eyemaker_list>li:nth-child(3){
+    background: url('/eyebreath/mobile/brand/images/eyemaker03.jpg') no-repeat center; 
+    background-size:cover; 
+}
+p.eyemaker_name{
+    width: 53px; /*53px*/
+    height: auto;
+    background-color:#6AC324 ;
+    font: normal 2.1333vw 'Nanum Gothic KR';
+    position: absolute;
+    top: 54px; /*56px*/
+    left: 1.33%; /*5px*/
+    text-align: center;
+    border-radius: 3px;
+}
+p.eyemaker_day{
+    width: 130px; /*110px*/
+    height: auto;
+    background-color: #2451C3;
+    font:normal 2.1333vw 'Nanum Gothic KR' ;
+    position: absolute;
+    top: 54px; /*56px*/
+    left: 65px; /*65px*/
+    text-align: center;
+    border-radius: 3px;
+}
+p.eyemaker_title{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 85px; /*78px*/
+    left: 0px;
+    font: bold 3.8vw 'Nanum Gothic KR' ;
+    /* background: teal; */
+}
+section#event003{
+    width: 100%;
+    height: 220px;
+    /* background: red; */
+    border-bottom: solid 1px #828282;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+div#event_inner3{
+    width: 100%;
+    height: 150px; /*150px*/
+    background: url('/eyebreath/mobile/brand/images/event03.jpg') no-repeat center;
+    background-size: cover;
+    margin-top: 20px;
+    position: relative;
+    top:0px;
+    left: 0px;
+    text-align: center;
+}
+section#today{
+    width: 100%;
+    height: 245px;
+    margin-top: 35px;
+    /* background: darkgreen; */
+}
+h2.name_title{
+    width: auto;
+    height: auto;
+    /* background: #2451C3; */
+    font: bold 4.8vw 'Nanum Gothic KR' ;
+    margin-bottom: 15px;
+}
+ul#today_list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background: firebrick */
+}
+ul#today_list>li{
+    width: 110px; /*110px*/
+    height: 181px;
+    /* background: #24B0C3; */
+}
+p.today_image{
+    width: 100%;
+    height: auto;
+}
+p.today_image img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+p.today_hash1{
+    width: auto; /*48px*/
+    height: auto;
+    background: #A4D566;
+    border-radius: 3px;
+    margin-top: 4px;
+    font: normal 2.1333vw 'Nanum Gothic KR';
+    text-align: center;
+    float: left;
+    margin-left: 5px;
+}
+p.today_hash2{
+    width: 80px; /*75px*/
+    height: auto;
+    background: #A4D566;
+    border-radius: 3px;
+    margin-top: 4px;
+    font: normal 2.1333vw 'Nanum Gothic KR';
+}
+p.today_hash3{
+    width: 97px; /*90px*/
+    height: auto;
+    background: #A4D566;
+    border-radius: 3px;
+    margin-top: 4px;
+    font: normal 2.1333vw  'Nanum Gothic KR';
+}
+
+section#best{
+    width: 100%;
+    height: 290px;
+    margin-top: 35px;
+    /* background: darkkhaki; */
+    border-bottom: solid 1px #828282;
+    box-sizing: border-box;
+}
+ul#best_list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background: chocolate */
+}
+ul#best_list>li{
+    width: 110px;
+    height: 181px;
+    /* background: #2c24c3; */
+}
+p.best_image{
+    width: 100%;
+    height: auto;
+}
+p.best_image img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+p.best_hash1{
+    width: 48px;
+    height: auto;
+    background: #EAED51;
+    border-radius: 3px;
+    margin-top: 4px;
+    font: normal 2.1333vw 'Nanum Gothic KR';
+    text-align: center;
+    float: left;
+    margin-left: 3px;
+}
+p.best_hash2{
+    width: 80px;
+    height: auto;
+    background: #EAED51;
+    border-radius: 3px;
+    margin-top: 4px;
+    font: normal 2.1333vw 'Nanum Gothic KR';
+}
+p.best_hash3{
+    width: 94px;
+    height: auto;
+    background: #EAED51;
+    border-radius: 3px;
+    margin-top: 4px;
+    font: normal 2.1333vw  'Nanum Gothic KR';
+}
+
+section#time{
+    width: 100%;
+    height: 470px;
+    margin-top: 35px;
+    /* background: khaki; */
+    border-bottom: solid 1px #828282;
+    box-sizing: border-box;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+p#clock{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 3px;
+    left: 100px;
+}
+p#clock img{
+    width: 100%;
+}
+ul#time_list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background: cornflowerblue; */
+}
+ul#time_list>li{
+    width: 110px;
+    height: 183px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 30px;
+}
+p.time_image{
+    width: 100%;
+    margin-bottom: 3px;
+}
+p.time_image img{
+    width: 100%;
+}
+p.time_day{
+    font: normal 10px 'Nanum Gothic KR';
+    position: absolute;
+    background: #9F9F9F;
+    left: 0px;
+    top: 0px;
+}
+p.time_brand{
+    font: normal 12px 'Nanum Gothic KR';
+    margin-bottom: 3px;
+}
+p.time_price{
+    font: bold 10px 'Nanum Gothic KR';
+}
+
+section#sunglasses{
+    width: 100%;
+    height: 365px;
+    /* background: pink; */
+    position: relative;
+    top: 50px;
+    left: 0px;
+}
+div#sungla_main{
+    width: 100%;
+    height: 200px;
+    background: url('/eyebreath/mobile/brand/images/brand_main.jpg') no-repeat center;
+    background-size: cover;
+    border-radius: 13px 13px 0px 0px;
+}
+p.sun_main_title1{
+    font: bold 24px 'Nanum Gothic KR';
+    color: white;
+    position: absolute;
+    top: 129px;
+    left: 82px;
+}
+p.sun_main_title2{
+    font: bold 16px 'Nanum Gothic KR';
+    color: white;
+    position: absolute;
+    top: 160px;
+    left: 99px;
+}
+div#sun_sub{
+    width: 343px;
+    height: 130px;
+    margin-top: 15px;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    /* background: yellow; */
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+}
+/* #sun_sub> li{
+    width: 100%;
+    height: auto;
+    background: blue;
+} */
+div#sun_left{
+    width: 168px;
+    height: 130px;
+    /* background: darkgray; */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+p#sun_left_image{
+    width: 168px;
+    height: 130px;
+}
+p#sun_left_image img{
+    width: 100%;
+    height: 100%;
+}
+div#sun_right{
+    width: 168px;
+    height: 130px;
+    /* background: darkgray; */
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+p#sun_right_image{
+    width: 168px;
+    height: 130px;
+}
+p#sun_right_image img{
+    width: 100%;
+    height: 100%;
+}
+p#sun_sub_brand1{
+    font:normal 10px 'Nanum Gothic KR' ;
+    position: absolute;
+    top: 100px;
+    left: 8px;
+}
+p#sun_sub_price1{
+    font:normal 10px 'Nanum Gothic KR' ;
+    position: absolute;
+    top: 112px;
+    left: 8px;
+}
+p#sun_sub_brand2{
+    font:normal 10px 'Nanum Gothic KR' ;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+p#sun_sub_price2{
+    font:normal 10px 'Nanum Gothic KR' ;
+    position: absolute;
+    top: 112px;
+    right: 122px;
+} 
+
+/*footer시작*/
+div#footer_day{
+    width: 100%;
+    height: auto;
+    /*background: tomato;*/
+    padding-top: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+p.day{
+    font:normal 3.2vw 'Nanum Gothic KR' ;
+    color: #1D1D1D;
+}
+div#footer_btn{
+    width: 100%;
+    height: auto;
+    /*background: yellow;*/
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+button#btn{
+    font: normal 2.6667vw 'Nanum Gothic KR';
+    color: #1D1D1D;
+    background: #A9A9A9;
+    border: 1px #A9A9A9;
+    width: 29.33%;
+    height: 12.5%;
+}
+button#btn2{
+    font: normal 2.6667vw 'Nanum Gothic KR';
+    color: #1D1D1D;
+    background: #A9A9A9;
+    border: 1px #A9A9A9;
+    width: 29.33%;
+    height: 12.5%;
+}
+ul#footer_contents{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px auto;
+    /*background: red;*/
+}
+ul#footer_contents>li{
+    text-align: center;
+}
+ul#footer_contents>li a{
+    font: normal 2.6667vw 'Nanum Gothic KR';
+    color:  #1D1D1D;
+}
+div#footer_comment{
+    width:66.66%;
+    height: auto;
+    /*background: darkkhaki;*/
+    margin: 0px auto;
+    text-align: center;
+}
+p.footer_name{
+    font: normal 2.6667vw 'Nanum Gothic KR';
+    color:  #1D1D1D;
+    margin-bottom: 2px;
+}
+p.footer_address{
+    font: normal 2.6667vw 'Nanum Gothic KR';
+    color:  #1D1D1D;
+    margin-bottom: 2px;
+}
+p.footer_number{
+    font: normal 2.6667vw 'Nanum Gothic KR';
+    color:  #1D1D1D;
+}
+
+
+
+
+
+
+
+@media screen and (orientation:landscape){
+    section#join_event{
+        height: 150px;
+    }
+    section#event001,section#event002,section#event003{
+        height: 320px;
+    }
+    section#eyemaker{
+        height: 300px;
+        width: 100%;
+    }
+    
+}

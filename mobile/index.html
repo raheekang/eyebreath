@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eyebreath</title>
+    <link rel='stylesheet' href="/eyebreath/mobile/css/reset.css">
+    <link rel="stylesheet" href="/eyebreath/mobile/css/common.css">
+    <link rel="stylesheet" href="/eyebreath/mobile/css/main.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==' crossorigin='anonymous'/>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js "></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="/eyebreath/mobile/js/navi.js"></script>
+
+    
+
+    <script>
+        let ua = window.navigator.userAgent.toLowerCase();
+        //let mobileWindowWidth
+        // if(/iphone/.test(ua) || /android/.test(ua) || /opera/.test(ua) || /bada/.test(ua) || /ipad/.test(ua) || /windows ce/.test(ua)) {
+        // document.location.replace("http://kangrahee.dothome.co.kr/eyebreath/mobile/index.html");
+        // }else{
+            window.addEventListener('resize', ()=>{
+            let windowSize=window.innerWidth;
+                if(windowSize>800){
+                    window.location.replace("http://kangrahee.dothome.co.kr/eyebreath")
+                }
+            })
+        
+        
+    </script>
+    
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+        body {
+          
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+  
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
+
+      <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+            var swiper = new Swiper(".mySwiper", {});
+        })
+      </script>
+
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">
+            <a href="#"><img src="/eyebreath/mobile/brand/images/main_logo.png" alt="메인로고"></a>
+        </h2>
+        <h2 class="menu">
+            <a href="#"><img src="/eyebreath/mobile/images/main/hamberger.png" alt="메인로고"></a>
+        </h2>
+        <h2 class="home">
+            <a href="#"><img src="/eyebreath/mobile/images/main/home.png" alt="메인로고"></a>
+        </h2>
+        
+
+        <nav id="mobilemenu">
+            <h2 class="hidden">메뉴</h2>
+            <div id="mobile_inner">
+                <div id="login">
+                    <p id="welcome">로그인 해주세요.</p>
+                    <p id="welcome_img"><img src="/eyebreath/mobile/images/main/people.png"></p>
+                    <button id="login_btn">로그인</button>
+                    <button id="join_btn">회원가입</button>
+                    <span id="mobileclose_btn"><a href="#"><img src="/eyebreath/mobile/images/main/close2.png"></a></span>
+                </div>
+
+                <ul id="mobile_menu_list">
+                    <li><a href="#">SHOP</a>
+                        <span class="mobile_icon"><img src="/eyebreath/mobile/images/main/mobilemenu_icon04.png" alt=""></span>
+                        <ul class="mobile_submenu_list">
+                            <li><a href="#">안경</a></li>
+                            <li><a href="#">선글라스</a></li>
+                            <li><a href="#">액세서리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">EYEMAKER</a>
+                        <span class="mobile_icon"><img src="/eyebreath/mobile/images/main/mobilemenu_icon04.png" alt=""></span>
+                        <ul class="mobile_submenu_list">
+                            <li><a href="#">이용방법</a></li>
+                            <li><a href="#">사용후기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">STYLE</a>
+                        <span class="mobile_icon"><img src="/eyebreath/mobile/images/main/mobilemenu_icon04.png" alt=""></span>
+                        <ul class="mobile_submenu_list">
+                            <li><a href="#">BEST</a></li>
+                            <li><a href="#">명예의 전당</a></li>
+                            <li><a href="#">WEEKLY BEST</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">EVENT</a>
+                        <span class="mobile_icon"><img src="/eyebreath/mobile/images/main/mobilemenu_icon04.png" alt=""></span>
+                        <ul class="mobile_submenu_list">
+                            <li><a href="#">출석체크</a></li>
+                            <li><a href="#">신규런칭</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- <div id="mobile_graylayer"></div> -->
+    </header>
+
+    <section id="visual" class="swiper mySwiper">
+        <h2 class="hidden">비주얼 영역</h2>
+        <ul id="visual_list" class="swiper-wrapper">
+            <li class="swiper-slide">
+                <div id="visual_text1">
+                    <p class="visual_title"><a href="#">EYE MAKER</a></p>
+                    <p class="visual_middle"><a href="#">상상을 현실로 지금 바로 경험해보세요</a></p>
+                    <p class="visual_last"><a href="#">오프라인 매장이 아닌 온라인 매장에서 쉽고 간편하게</a></p>
+                </div>
+            </li>
+            <li class="swiper-slide">
+                <div id="visual_text2">
+                    <p class="visual_title"><a href="#">ONEBRILLIANT</a></p>
+                    <p class="visual_middle"><a href="#">안경, 선글라스 ~65%SALE</a></p>
+                    <p class="visual_last"><a href="#">트렌디한 변화를 주고 싶다면, 바로 입장하세요</a></p>
+                </div>
+            </li>
+            <li class="swiper-slide">
+                <div id="visual_text3">
+                    <p class="visual_title"><a href="#">EXTREME SPORTS ITEM</a></p>
+                    <p class="visual_middle"><a href="#">편광 선글라스로 자외선으로부터 눈 보호하기</a></p>
+                    <p class="visual_last"><a href="#">다양한 스포츠를 보다 편하게 즐기고 싶다면?</a></p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <main>
+        <section id="mini_menu">
+            <h2 class="hidden">미니메뉴 목록</h2>
+            <ul id="mini_menu_list">
+                <li>
+                    <p class="mini_menu_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/menu1.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="mini_menu_text">
+                        <a href="#">라운드</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="mini_menu_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/menu2.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="mini_menu_text">
+                        <a href="#">스퀘어</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="mini_menu_image">
+                        <a href="./brand/brand.html"><img src="/eyebreath/mobile/images/main/dog.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="mini_menu_text">
+                        <a href="#">이벤트</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="mini_menu_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/mmenu1.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="mini_menu_text">
+                        <a href="#">남성추천</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="mini_menu_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/mmenu2.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="mini_menu_text">
+                        <a href="#">여성추천</a>
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="new_item">
+            <h2 class="hidden">신상품 목록</h2>
+            <div id="new_item_text">
+                <p class="new_item_title">NEW ARRIVALS</p>
+                <p class="new_item_title2">신상품</p>
+                <!--<button id="next_btn"><i class="fa-thin fa-angle-right"></i></button>-->
+            </div>
+            <ul id="new_item_list">
+                <li>
+                    <p class="new_item_image">
+                        <a href="#"><img src="/eyebreath/mobile//images/main/new1.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="new_item_brand">
+                        <a href="#">FAKE ME</a>
+                    </p>
+                    <p class="new_item_name">
+                        <a href="#">해리 Harry CLW</a>
+                    </p>
+                    <p class="new_item_price">
+                        <a href="#">157,500원</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="new_item_image">
+                        <a href="#"><img src="/eyebreath/mobile//images/main/new3.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="new_item_brand">
+                        <a href="#">FAKE ME</a>
+                    </p>
+                    <p class="new_item_name">
+                        <a href="#">해리 Harry CLW</a>
+                    </p>
+                    <p class="new_item_price">
+                        <a href="#">157,500원</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="new_item_image">
+                        <a href="#"><img src="/eyebreath/mobile//images/main/new2.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="new_item_brand">
+                        <a href="#">FAKE ME</a>
+                    </p>
+                    <p class="new_item_name">
+                        <a href="#">해리 Harry CLW</a>
+                    </p>
+                    <p class="new_item_price">
+                        <a href="#">157,500원</a>
+                    </p>
+                </li>
+                <!--
+                <li>
+                    <p class="new_item_imgge">
+                        <a href="#"><img src="/eyebreath/mobile//images/main/new4.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="new_item_brand">
+                        <a href="#">FAKE ME</a>
+                    </p>
+                    <p class="new_item_name">
+                        <a href="#">해리 Harry CLW</a>
+                    </p>
+                    <p class="new_item_price">
+                        <a href="#">157,500원</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="new_item_imgge">
+                        <a href="#"><img src="/eyebreath/mobile//images/main/new5.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="new_item_brand">
+                        <a href="#">FAKE ME</a>
+                    </p>
+                    <p class="new_item_name">
+                        <a href="#">해리 Harry CLW</a>
+                    </p>
+                    <p class="new_item_price">
+                        <a href="#">157,500원</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="new_item_imgge">
+                        <a href="#"><img src="/eyebreath/mobile//images/main/new6.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="new_item_brand">
+                        <a href="#">FAKE ME</a>
+                    </p>
+                    <p class="new_item_name">
+                        <a href="#">해리 Harry CLW</a>
+                    </p>
+                    <p class="new_item_price">
+                        <a href="#">157,500원</a>
+                    </p>
+                </li>
+                -->
+            </ul>
+        </section>
+
+        <section id="premium_ad">
+            <h2 class="hidden">프리미엄 제품 광고</h2>
+            <div id="premium_ad_text">
+                <p class="premium_ad_title1">새롭게 돌아온</p>
+                <p class="premium_ad_title2">PREMIUM LINE</p>
+                <p class="premium_ad_title3">정가대비 최대 20% 할인</p>
+                <button class="premium_ad_btn">구매하기</button>
+            </div>
+        </section>
+
+        <section id="best_item">
+            <h2 class="hidden">베스트 상품 목록</h2>
+            <div id="best_item_text">
+                <p class="best_item_title">BEST PRODUCTS</p>
+                <p class="best_item_title2">이번주 베스트 상품</p>
+            </div>
+            <ul id="best_item_list">
+                <li>
+                    <p class="best_item_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/best1.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="best_item_brand">
+                        <a href="#">FAKE ME</a>
+                    </p>
+                    <p class="best_item_name">
+                        <a href="#">해리 Harry CLW</a>
+                    </p>
+                    <p class="best_item_price">
+                        <a href="#">157,500원</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="best_item_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/best2.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="best_item_brand">
+                        <a href="#">FAKE ME</a>
+                    </p>
+                    <p class="best_item_name">
+                        <a href="#">해리 Harry CLW</a>
+                    </p>
+                    <p class="best_item_price">
+                        <a href="#">157,500원</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="best_item_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/best3.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="best_item_brand">
+                        <a href="#">FAKE ME</a>
+                    </p>
+                    <p class="best_item_name">
+                        <a href="#">해리 Harry CLW</a>
+                    </p>
+                    <p class="best_item_price">
+                        <a href="#">157,500원</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="best_item_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/best4.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="best_item_brand">
+                        <a href="#">FAKE ME</a>
+                    </p>
+                    <p class="best_item_name">
+                        <a href="#">해리 Harry CLW</a>
+                    </p>
+                    <p class="best_item_price">
+                        <a href="#">157,500원</a>
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="week_style">
+            <h2 class="hidden">주간 스타일 목록</h2>
+            <div id="week_style_text">
+                <p class="week_style_title">WEEKLY BEST STYLER</p>
+            </div>
+            <ul id="week_style_list">
+                <li>
+                    <p class="week_style_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/style1.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="week_style_id_img">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/id1.png" alt="이미지설명"></a>
+                    </p>
+                    <p class="week_style_id">
+                        <a href="#">@rahee.0418</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="week_style_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/style2.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="week_style_id_img">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/id2.png" alt="이미지설명"></a>
+                    </p>
+                    <p class="week_style_id">
+                        <a href="#">@rahee.0418</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="week_style_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/style3.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="week_style_id_img">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/id3.png" alt="이미지설명"></a>
+                    </p>
+                    <p class="week_style_id">
+                        <a href="#">@rahee.0418</a>
+                    </p>
+                </li>
+                <!--
+                <li>
+                    <p class="week_style_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/style4.jpg"></a>
+                    </p>
+                    <p class="week_style_id_img">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/id4.png"></a>
+                    </p>
+                    <p class="week_style_id">
+                        <a href="#">@rahee.0418</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="week_style_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/style5.jpg"></a>
+                    </p>
+                    <p class="week_style_id_img">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/id5.png"></a>
+                    </p>
+                    <p class="week_style_id">
+                        <a href="#">@rahee.0418</a>
+                    </p>
+                </li>
+                -->
+            </ul>
+        </section>
+
+        <section id="event">
+            <h2 class="hidden">이벤트 광고</h2>
+            <div id="event_img">
+                 <p class="event_image">
+                    <a href="#"><img src="/eyebreath/mobile/images/main/event.png" alt="이미지설명"></a>
+                </p>
+            </div>
+            <div id="event_text">
+                <p class="event_title1">WINTER SPECIAL EVENT</p>
+                <p class="event_title2">출석체크 참여하고 응모하기</p>
+                <p class="event_title3">매일매일 다양한 쿠폰 증정!</p>
+                <button class="event_btn">이벤트 바로가기</button>
+            </div>
+        </section>
+
+        <section id="delivery">
+            <h2 class="hidden">당일배송 광고</h2>
+            <div id="delivery_text">
+                <p class="delivery_title">오늘주문하고 내일받자!</p>
+                <p class="delivery_title2">당일배송</p>
+            </div>
+            <ul id="delivery_list">
+                <li>
+                    <p class="delivery_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/deli1.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="delivery_brand">
+                        <a href="#">FAKE ME</a>
+                    </p>
+                    <p class="delivery_name">
+                        <a href="#">해리 Harry CLW</a>
+                    </p>
+                    <p class="delivery_price">
+                        <a href="#">157,500원</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="delivery_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/deli2.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="delivery_brand">
+                        <a href="#">FAKE ME</a>
+                    </p>
+                    <p class="delivery_name">
+                        <a href="#">해리 Harry CLW</a>
+                    </p>
+                    <p class="delivery_price">
+                        <a href="#">157,500원</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="delivery_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/deli3.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="delivery_brand">
+                        <a href="#">FAKE ME</a>
+                    </p>
+                    <p class="delivery_name">
+                        <a href="#">해리 Harry CLW</a>
+                    </p>
+                    <p class="delivery_price">
+                        <a href="#">157,500원</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="delivery_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/deli4.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="delivery_brand">
+                        <a href="#">FAKE ME</a>
+                    </p>
+                    <p class="delivery_name">
+                        <a href="#">해리 Harry CLW</a>
+                    </p>
+                    <p class="delivery_price">
+                        <a href="#">157,500원</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="delivery_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/deli5.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="delivery_brand">
+                        <a href="#">FAKE ME</a>
+                    </p>
+                    <p class="delivery_name">
+                        <a href="#">해리 Harry CLW</a>
+                    </p>
+                    <p class="delivery_price">
+                        <a href="#">157,500원</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="delivery_image">
+                        <a href="#"><img src="/eyebreath/mobile/images/main/deli6.jpg" alt="이미지설명"></a>
+                    </p>
+                    <p class="delivery_brand">
+                        <a href="#">FAKE ME</a>
+                    </p>
+                    <p class="delivery_name">
+                        <a href="#">해리 Harry CLW</a>
+                    </p>
+                    <p class="delivery_price">
+                        <a href="#">157,500원</a>
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+
+            <div id="footer_day">
+                <p class="day">OPEN AM9:00-18:00 OFFICE DAY: MON-FRI </p>
+            </div>
+            <div id="footer_btn">
+                <button id="btn">1:1 문의하기</button>
+                <button id="btn2">FAQ자주묻는질문</button>
+            </div>
+            <ul id="footer_contents">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">제휴문의</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+            <div id="footer_comment">
+                <p class="footer_name">상호명: EYEBREATH 대표자:강라희</p>
+                <p class="footer_address">인천시 서구 봉오대로318번지 18 14동 501호</p>
+                <p class="footer_number">사업자 번호:000-00-00000</p>
+            </div>
+
+    </footer>
+
+</body>
+</html>

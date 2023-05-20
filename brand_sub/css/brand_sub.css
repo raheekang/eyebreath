@@ -1,0 +1,458 @@
+/*컨텐츠 집*/
+div#detail_contents_wrap{
+    width: 100%;
+    min-width: 768px;
+    min-height: 1200px;
+    /*background:#cccccc;*/
+}
+/*컨텐츠 집 끝*/
+
+/*컨텐츠 영역*/
+div#sell_wrap{
+    width: 100%;
+    min-width: 768px;
+    height: 800px;
+    /* background: pink; */
+}
+div#sell{
+    width: 1200px;
+    height: 100%;
+    margin: 0px auto;
+    /* background: yellow; */
+    position: relative;
+    top:0px;
+    left: 0px;
+    border-bottom: solid 1px black;
+    box-sizing: border-box;
+}
+div#sell_item{
+    width: 41.66%;
+    height: 475px;
+    position: absolute;
+    top: 210px;
+    left: 1.16%;
+}
+div#sell_item img{
+    width: 100%;
+    height: 100%;
+}
+div#sell_info{
+    width: 53.58%; /*643px*/
+    height: 475px;
+    /* background: skyblue; */
+    position: absolute;
+    top: 210px;
+    right: 0px;
+    border-top: solid 2px black;
+    box-sizing: border-box;
+}
+section#sell_text{
+    width: 100%;
+    height: 190px;
+    /* background: gray; */
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    border-bottom: solid 1px black;
+    box-sizing: border-box;
+}
+section#sell_delivery{
+    width: 100%;
+    height: 175px;
+    /* background: darkgreen; */
+    position: absolute;
+    top: 225px;
+    left: 0px;
+    border-bottom: solid 1px black;
+    box-sizing: border-box;
+}
+section#sell_btn{
+    width: 100%;
+    height: 70px;
+    /* background: darkgoldenrod; */
+    position: absolute;
+    top: 428px;
+    left: 0px;
+}
+p.brand{
+    font: bold 1.125em 'Nanum Gothic KR' ;
+    color: black;
+    margin-bottom: 27px;
+}
+div#review{
+    width: 38.10%; /*245px*/
+    height: 20px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between; 
+    /* background: red; */
+}
+p.review_text{
+    font: normal 0.875em 'Nanum Gothic KR' ;
+    color: black;
+    text-decoration: underline;
+}
+p.name{
+    font: normal 1.125em 'Nanum Gothic KR' ;
+    color: black;
+    margin-top: 23px;
+}
+p.price{
+    font: bold 1.125em 'Nanum Gothic KR' ;
+    color: black;
+    margin-top: 23px;
+}
+p.delivery_title{
+    font: bold 1em 'Nanum Gothic KR' ;
+    color: black;
+    margin-top: 20px;
+}
+div#delivery1{
+    width: 100%;
+    height: 60px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between; 
+    margin-top: 20px;
+    /* background: red; */
+}
+p.delivery_sub1{
+    font: normal 0.875em 'Nanum Gothic KR' ;
+    color: black;
+}
+p.delivery_sub1_text{
+    font: normal 0.875em 'Nanum Gothic KR' ;
+    color: black;
+}
+div#delivery2{
+    width: 48.21%; /*310px*/
+    height: 41px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between; 
+    /* background: blue; */
+}
+p.delivery_sub2{
+    font: normal 0.875em 'Nanum Gothic KR' ;
+    color: black;
+}
+p.delivery_sub2_text{
+    font: normal 0.875em 'Nanum Gothic KR' ;
+    color: black;
+}
+button#cart{
+    font: bold 1.125em 'Nanum Gothic KR' ;
+    color: black; 
+    background: white;
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 46.65%; /*300px*/
+    height: 44px;
+    /* position: absolute;
+    top: 428px;
+    left: 0px; */
+}
+button#click{
+    font: bold 1.125em 'Nanum Gothic KR' ;
+    color: white; 
+    background: black;
+    border-radius: 5px;
+    width: 46.65%;
+    height: 44px;
+    margin-left: 25px;
+    /* position: absolute;
+    top: 428px;
+    left: 0px; */
+}
+
+div#sell_ad_wrap{
+    width: 100%;
+    height: 220px;
+    /* background: dodgerblue; */
+    margin-top: 100px;
+}
+div#sell_ad{
+    width: 1200px;
+    height: 100%;
+    /* background: deeppink; */
+    margin: 0px auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+div#sell_ad_left{
+    width: 47.5%; /*570px*/
+    height: 220px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url('/eyebreath/brand_sub/image/sell_ad_left.jpg') no-repeat center;
+    background-size: cover;
+}
+div#sell_ad_right{
+    width: 47.5%;
+    height: 220px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url('/eyebreath/brand_sub/image/sell_ad_right.jpg') no-repeat center;
+}
+p#sell_ad_left_title{
+    font: bold 2.75em 'Nanum Gothic KR' ;
+    color: white; 
+    text-align: center;
+    margin-top: 90px;
+}
+p#sell_ad_left_sub{
+    font: normal 1em 'Nanum Gothic KR' ;
+    color: white; 
+    text-align: center;
+}
+p#sell_ad_right_title{
+    font: bold 2.75em 'Nanum Gothic KR' ;
+    color: white; 
+    text-align: center;
+    margin-top: 90px;
+}
+p#sell_ad_right_sub{
+    font: normal 1em 'Nanum Gothic KR' ;
+    color: white; 
+    text-align: center;
+}
+
+div#explanation_wrap{
+    width: 100%;
+    height: 5000px;
+    /* background: pink; */
+    margin-top: 250px;
+}
+div#explanation{
+    width: 1200px;
+    height: 100%;
+    /* background: skyblue; */
+    margin: 0px auto;
+}
+p#explanation_text1{
+    font: bold 1.375em 'Nanum Gothic KR' ;
+    color: black; 
+    text-align: center;
+    margin-bottom: 100px;
+}
+p#explanation_img1{
+    width: 100%;
+    height: 962px;
+    /* background: darkkhaki; */
+}
+p#explanation_img1 img{
+    width: 100%;
+    height: 100%;
+}
+div#explanation_img2{
+    width: 100%;
+    height: 797px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around; 
+    /* background: darkorange; */
+    margin-top: 100px;
+}
+div#explanation_text2{
+    width: 87.5%; /*1050px*/
+    height: 250px;
+    /* background: darkseagreen; */
+    text-align: center;
+    margin: 250px auto;
+}
+p#explanation_text2_title{
+    font: bold 1.5em 'Nanum Gothic KR' ;
+    color: black; 
+    margin-bottom: 70px;
+}
+p#explanation_text2_sub{
+    font: normal 1.125em 'Nanum Gothic KR' ;
+    color: black; 
+    line-height: 35px;
+}
+p#explanation_img3{
+    width: 100%;
+    height: 338px;
+    /* background: darkkhaki; */
+    margin-bottom: 100px;
+}
+p#explanation_img3 img{
+    width: 100%;
+    height: 100%;
+}
+p#explanation_img4{
+    width: 100%;
+    height: 338px;
+    /* background: darkkhaki; */
+    margin-bottom: 100px;
+}
+p#explanation_img4 img{
+    width: 100%;
+    height: 100%;
+}
+p#explanation_img5{
+    width: 100%;
+    height: 509px;
+    /* background: darkkhaki; */
+    margin-bottom: 100px;
+}
+p#explanation_img5 img{
+    width: 100%;
+    height: 100%;
+}
+p#explanation_img6{
+    width: 100%;
+    height: 725px;
+    /* background: darkkhaki; */
+    margin-bottom: 100px;
+}
+p#explanation_img6 img{
+    width: 100%;
+    height: 100%;
+}
+
+div#info_wrap{
+    width: 100%;
+    height: 800px;
+    /* background: yellow; */
+    margin-top: 100px;
+}
+div#info{
+    width: 1200px;
+    height: 100%;
+    /* background: yellowgreen; */
+    margin: 0px auto;
+}
+div#info_text1{
+    width: 22.33%; /*268px*/
+    height: 88px;
+    /* background: darkviolet; */
+    margin-left: 50px;
+}
+p#info_text1_title{
+    font: bold 1.125em 'Nanum Gothic KR' ;
+    color: black; 
+}
+p#info_text1_sub{
+    font: normal 1em 'Nanum Gothic KR' ;
+    color: black; 
+    margin-top: 30px;
+}
+div#info_text2{
+    width: 91.66%; /*1100px*/
+    height: 246px;
+    /* background: darkslateblue; */
+    margin-left: 50px;
+    margin-top: 50px;
+}
+p#info_text2_title{
+    font: bold 1.125em 'Nanum Gothic KR' ;
+    color: black; 
+}
+p#info_text2_sub1{
+    font: normal 1em 'Nanum Gothic KR' ;
+    color: black; 
+    margin-top: 30px;
+    line-height: 28px;
+}
+p#info_text2_sub2{
+    font: normal 1em 'Nanum Gothic KR' ;
+    color: black; 
+    margin-top: 30px;
+    line-height: 28px;
+}
+p#info_text2_sub3{
+    font: normal 1em 'Nanum Gothic KR' ;
+    color: black; 
+    margin-top: 30px;
+}
+div#info_text3{
+    width: 91.66%;
+    height: 180px;
+    /* background: darkslategrey; */
+    margin-left: 50px;
+    margin-top: 100px;
+}
+p#info_text3_title{
+    font: bold 1.125em 'Nanum Gothic KR' ;
+    color: black; 
+}
+p#info_text3_sub1{
+    font: normal 1em 'Nanum Gothic KR' ;
+    color: black; 
+    margin-top: 30px;
+    line-height: 28px;
+}
+p#info_text3_sub2{
+    font: normal 1em 'Nanum Gothic KR' ;
+    color: black; 
+    margin-top: 30px;
+    line-height: 28px;
+}
+
+
+
+
+
+div#footer_wrap{
+    width: 100%;
+    min-width: 768px;
+    height: 234px;
+    background: black;
+}
+footer{
+    width:1200px;
+    height:100%;
+    margin:0px auto;
+    position:relative;
+    left:0px;
+    top:0px; 
+}
+ul#footer_contents{
+    width: 81.66%;
+    height: 12.82%;
+    margin: 0px auto;
+    padding-top: 50px;
+    /*background: gold;*/
+}
+ul#footer_contents>li{
+    width:14.2%;   
+    height: auto; 
+    float: left;
+    text-align:center;
+}
+ul#footer_contents>li>a{
+    font: normal 0.875em 'Nanum Gothic KR';
+    color: white;
+}
+div#footer_comment{
+    width: 37%;
+    height: auto;
+    margin: 0px auto;
+    padding-top: 50px;
+    /*background: violet;*/
+}
+p#comment{
+    font: normal 0.875em 'Nanum Gothic KR';
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+    div#sell,div#sell_ad,div#explanation,div#info,footer{
+        width: 100%;
+    }
+}

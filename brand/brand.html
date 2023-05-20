@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eyebreath</title>
+    <link rel='stylesheet' href="/eyebreath/css/reset.css">
+    <link rel="stylesheet" href="/eyebreath/css/common.css">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js'></script>
+    <script src="/eyebreath/brand/js/glamenu.js"></script>
+
+    <link rel="stylesheet" href="/eyebreath/css/main.css">
+    <link rel="stylesheet" href="/eyebreath/brand/css/brand.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js'></script>
+    <script src="/eyebreath/js/navi.js"></script>
+    
+</head>
+
+<body>
+     <!--바로가기메뉴시작-->
+     <ul class="skipmenu_list">
+        <li><a href="#mainmenu_list" class="hidden">메인메뉴바로가기</a></li>
+        <li><a href="#contents" class="hidden">본문바로가기</a></li>
+        <li><a href="#footer" class="hidden">하단바로가기</a></li>
+    </ul>
+    <!--바로가기메뉴끝-->   
+    <!--상단영역시작-->
+    <div id="header_wrap">
+        <header>
+            <h1 id="logo">
+                <a href="/eyebreath/index.php"><img src="/eyebreath/images/main_img/main_logo.png" alt="메인로고"></a>
+            </h1>
+            <nav id="topmenu">
+                <h2 class="hidden">상단빠른메뉴</h2>
+                <ul id="topmenu_list">
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">SEARCH</a></li>
+                    <li><a href="#">BAG</a></li>
+                </ul>
+            </nav>
+
+            <nav id="mainmenu">
+                <h2 class="hidden">메인메뉴</h2>
+                <ul id="mainmenu_list">
+                    <li>
+                        <a href="#" target="_parent" title="메인메뉴">SHOP</a>
+                        
+                        <ul class="submenu_list">
+                            <li><a href="#">BEST</a></li>
+                            <li><a href="#">안경</a></li>
+                            <li><a href="#">선글라스</a></li>
+                            <li><a href="#">액세서리</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li>
+                        <a href="#">EYEMAKER</a>
+                        
+                        <ul class="submenu_list">
+                            <li><a href="#">사용방법</a></li>
+                            <li><a href="#">사용후기</a></li>
+                            <li><a href="#">기타문의</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li>
+                        <a href="#">STYLE</a>
+                        
+                        <ul class="submenu_list">
+                            <li><a href="#">인기유저</a></li>
+                            <li><a href="#">인기스타일</a></li>
+                            <li><a href="#">명예의 전당</a></li>
+                        </ul>
+                        -->
+                    </li>
+                    <li>
+                        <a href="#">EVENT</a>
+                        
+                        <ul class="submenu_list">
+                            <li><a href="#">친구초대</a></li>
+                            <li><a href="#">출석체크</a></li>
+                            <li><a href="#">오늘의 특가</a></li>
+                            <li><a href="#">타임세일</a></li>
+                        </ul>
+                        
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!--상단영역끝-->
+    <!--콘텐츠영역시작-->
+    <div id="sub_contents_wrap">
+
+        <div id="shop_wrap">
+            <div id="shop">
+                <section id="shop_menu">
+                    <h2 class="hidden">안경 카테고리</h2>
+                    <ul id="shop_list">
+                        <li>
+                            <p class="shop_icon">
+                                <a href="#"><img src="/eyebreath/images/sub_img/gla_01.png" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_text">
+                                <a href="#">라운드</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="shop_icon">
+                                <a href="#"><img src="/eyebreath/images/sub_img/gla_02.png" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_text">
+                                <a href="#">스퀘어</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="shop_icon">
+                                <a href="#"><img src="/eyebreath/images/sub_img/gla_03.png" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_text">
+                                <a href="#">하금테</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="shop_icon">
+                                <a href="#"><img src="/eyebreath/images/sub_img/gla_04.png" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_text">
+                                <a href="#">믹스</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="shop_icon">
+                                <a href="#"><img src="/eyebreath/images/sub_img/gla_05.png" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_text">
+                                <a href="#">보잉</a>
+                             </p>
+                        </li>
+                        <li>
+                            <p class="shop_icon">
+                                <a href="#"><img src="/eyebreath/images/sub_img/gla_06.png" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_text">
+                                <a href="#">캣아이</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="shop_icon">
+                                <a href="#"><img src="/eyebreath/images/sub_img/gla_07.png" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_text">
+                                <a href="#">기타</a>
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                
+
+                <!--shop 아이템 시작-->
+                <section id="shop_item">
+                    <h2 class="hidden">제품 목록</h2>
+                    <div id="panel">
+
+
+
+
+
+
+
+                    </div>
+                </section>
+            </div>
+            <!--shop 아이템 끝-->
+        </div>
+
+        <!--회원가입 광고 시작-->
+        <div id="join_wrap">
+            <div id="join">
+                <section id="join_001">
+                    <h2 class="hidden">회원가입 광고 첫번째</h2>
+                    <div class="join_text">
+                        <a href="#"><img src="/eyebreath/images/sub_img/join_1.png" alt="이미지설명"></a>
+                        <p class="join_title">챙겨야 할 이 달의 등급 혜택</p>
+                        <button class="join_btn">챙겨가기</button>
+                    </div>
+                </section>
+
+                <section id="join_002">
+                    <h2 class="hidden">회원가입 광고 두번째</h2>
+                    <div class="join_text">
+                        <a href="#"><img src="/eyebreath/images/sub_img/join002.png" alt="이미지설명"></a>
+                        <p class="join_title">챙겨야 할 이 달의 등급 혜택</p>
+                        <button class="join_btn">챙겨가기</button>
+                    </div>
+                </section>
+
+                <section id="join_003">
+                    <h2 class="hidden">회원가입 광고 세번째</h2>
+                    <div class="join_text">
+                        <a href="#"><img src="/eyebreath/images/sub_img/join003.png" alt="이미지설명"></a>
+                        <p class="join_title">챙겨야 할 이 달의 등급 혜택</p>
+                        <button class="join_btn">챙겨가기</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+       <!--회원가입 광고 끝-->
+
+        <!--shop2 아이템 시작-->
+       <div id="shop2_wrap">
+            <div id="shop2">
+                <section id="shop2_item">
+                    <h2 class="hidden">제품 목록</h2>
+                    <ul id="shop2_item_list">
+                        <li>
+                            <p class="shop_image">
+                                <a href="#"><img src="/eyebreath/images/sub_img/sell9.jpg" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_brand">
+                                <a href="#">BUCKET LIST</a>
+                            </p>
+                            <p class="shop_name">
+                                <a href="#">버킷리스트 누베<br>티타늄 안경테 NUBE C2 50mm</a>
+                            </p>
+                            <p class="shop_price">
+                                <a href="#">69,000원</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="shop_image">
+                                <a href="#"><img src="/eyebreath/images/sub_img/sell10.jpg" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_brand">
+                                <a href="#">BUCKET LIST</a>
+                            </p>
+                            <p class="shop_name">
+                                <a href="#">버킷리스트 누베<br>티타늄 안경테 NUBE C2 50mm</a>
+                            </p>
+                            <p class="shop_price">
+                                <a href="#">69,000원</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="shop_image">
+                                <a href="#"><img src="/eyebreath/images/sub_img/sell11.jpg" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_brand">
+                                <a href="#">BUCKET LIST</a>
+                            </p>
+                            <p class="shop_name">
+                                <a href="#">버킷리스트 누베<br>티타늄 안경테 NUBE C2 50mm</a>
+                            </p>
+                            <p class="shop_price">
+                                <a href="#">69,000원</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="shop_image">
+                                <a href="#"><img src="/eyebreath/images/sub_img/sell12.jpg" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_brand">
+                                <a href="#">BUCKET LIST</a>
+                            </p>
+                            <p class="shop_name">
+                                <a href="#">버킷리스트 누베<br>티타늄 안경테 NUBE C2 50mm</a>
+                            </p>
+                            <p class="shop_price">
+                                <a href="#">69,000원</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="shop_image">
+                                <a href="#"><img src="/eyebreath/images/sub_img/sell13.jpg" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_brand">
+                                <a href="#">BUCKET LIST</a>
+                            </p>
+                            <p class="shop_name">
+                                <a href="#">버킷리스트 누베<br>티타늄 안경테 NUBE C2 50mm</a>
+                            </p>
+                            <p class="shop_price">
+                                <a href="#">69,000원</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="shop_image">
+                                <a href="#"><img src="/eyebreath/images/sub_img/sell14.jpg" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_brand">
+                                <a href="#">BUCKET LIST</a>
+                            </p>
+                            <p class="shop_name">
+                                <a href="#">버킷리스트 누베<br>티타늄 안경테 NUBE C2 50mm</a>
+                            </p>
+                            <p class="shop_price">
+                                <a href="#">69,000원</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="shop_image">
+                                <a href="#"><img src="/eyebreath/images/sub_img/sell15.jpg" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_brand">
+                                <a href="#">BUCKET LIST</a>
+                            </p>
+                            <p class="shop_name">
+                                <a href="#">버킷리스트 누베<br>티타늄 안경테 NUBE C2 50mm</a>
+                            </p>
+                            <p class="shop_price">
+                                <a href="#">69,000원</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="shop_image">
+                                <a href="#"><img src="/eyebreath/images/sub_img/sell16.jpg" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_brand">
+                                <a href="#">BUCKET LIST</a>
+                            </p>
+                            <p class="shop_name">
+                                <a href="#">버킷리스트 누베<br>티타늄 안경테 NUBE C2 50mm</a>
+                            </p>
+                            <p class="shop_price">
+                                <a href="#">69,000원</a>
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    <!--shop2 아이템 끝-->
+
+    <!--중간 shop 광고 시작-->
+
+        <div id="md_wrap">
+            <section id="md">
+                <h2 class="hidden">엠디 추천 상품</h2>
+                <div id="md_item">
+                    <div id="md_text001">
+                        <p class="md_title">특별한 하루를 위해</p>
+                        <p class="md_sub">새로운 변화를 주고 싶다면 믹스테와 함께하세요!</p>
+                        <p class="md_last">따뜻함과 동시에 멋스러움을 자아내는 믹스타입의 안경테를 통해 세련되고 시크한 이미지는 어떨까요?</p>
+                    </div>
+                    <div id="md_home001">
+                        <ul id="md_item_list">
+                            <li>
+                                <p class="md_item_image">
+                                    <a href="#"><img src="/eyebreath/images/sub_img/ad_1.jpg" alt="이미지설명"></a>
+                                </p>
+                                <p class="md_item_brand">
+                                    <a href="#">PARANOID</a>
+                                </p>
+                                <p class="md_item_name">
+                                    <a href="#">블랙 ABSOLUTE J1 53mm 라운즈앱솔루트 안경테</a>
+                                </p>
+                                <p class="md_item_price">
+                                    <a href="#">183,000원</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="md_item_image">
+                                    <a href="#"><img src="/eyebreath/images/sub_img/ad_2.jpg" alt="이미지설명"></a>
+                                </p>
+                                <p class="md_item_brand">
+                                    <a href="#">PARANOID</a>
+                                </p>
+                                <p class="md_item_name">
+                                    <a href="#">블랙 ABSOLUTE J1 53mm 라운즈앱솔루트 안경테</a>
+                                </p>
+                                <p class="md_item_price">
+                                    <a href="#">183,000원</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="md_item_image">
+                                    <a href="#"><img src="/eyebreath/images/sub_img/ad_3.jpg" alt="이미지설명"></a>
+                                </p>
+                                <p class="md_item_brand">
+                                    <a href="#">PARANOID</a>
+                                </p>
+                                <p class="md_item_name">
+                                    <a href="#">블랙 ABSOLUTE J1 53mm 라운즈앱솔루트 안경테</a>
+                                </p>
+                                <p class="md_item_price">
+                                    <a href="#">183,000원</a>
+                                </p>
+                            </li>
+                
+                            <!--
+                            <li>
+                                <p class="md_item_image">
+                                    <a href="#"><img src="/eyebreath/images/sub_img/ad_4.jpg" alt="이미지설명"></a>
+                                </p>
+                                <p class="md_item_brand">
+                                    <a href="#">PARANOID</a>
+                                </p>
+                                <p class="md_item_name">
+                                    <a href="#">블랙 타키론 콘래드 C1 48mm 애쉬크로프트 & 파라노이드 안경테</a>
+                                </p>
+                                <p class="md_item_price">
+                                    <a href="#">183,000원</a>
+                                </p>
+                            </li>
+                            -->
+                        </ul>
+                    </div>
+                </div>
+                 
+                
+                <div id="md_item2">
+                    <div id="md_text002">
+                        <p class="md_title">꾸민듯 안꾸민듯 꾸안꾸</p>
+                        <p class="md_sub">편안함과 트렌드를 동시에 즐길 수 있는 라운드테</p>
+                        <p class="md_last">시원한 듯 고급진 이미지를 자아내는 라운드타입은 어떠신가요?</p>
+                        <p class="md_last2">캐주얼, 오피스룩 등 다양하게 어울리는 감각적인 안경을 통해 스타일링을 해보세요!</p>
+                    </div>
+                    <div id="md_home002">
+                        <ul id="md_item_list2">
+                            <li>
+                                <p class="md_item_image">
+                                    <a href="#"><img src="/eyebreath/images/sub_img/ad_5.jpg" alt="이미지설명"></a>
+                                </p>
+                                <p class="md_item_brand">
+                                    <a href="#">PARANOID</a>
+                                </p>
+                                <p class="md_item_name">
+                                    <a href="#">블랙 ABSOLUTE J1 53mm 라운즈앱솔루트 안경테</a>
+                                </p>
+                                <p class="md_item_price">
+                                    <a href="#">183,000원</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="md_item_image">
+                                    <a href="#"><img src="/eyebreath/images/sub_img/ad_6.jpg" alt="이미지설명"></a>
+                                </p>
+                                <p class="md_item_brand">
+                                    <a href="#">PARANOID</a>
+                                </p>
+                                <p class="md_item_name">
+                                    <a href="#">블랙 ABSOLUTE J1 53mm 라운즈앱솔루트 안경테</a>
+                                </p>
+                                <p class="md_item_price">
+                                    <a href="#">183,000원</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="md_item_image">
+                                    <a href="#"><img src="/eyebreath/images/sub_img/ad_7.jpg" alt="이미지설명"></a>
+                                </p>
+                                <p class="md_item_brand">
+                                    <a href="#">PARANOID</a>
+                                </p>
+                                <p class="md_item_name">
+                                    <a href="#">블랙 ABSOLUTE J1 53mm 라운즈앱솔루트 안경테</a>
+                                </p>
+                                <p class="md_item_price">
+                                    <a href="#">183,000원</a>
+                                </p>
+                            </li>
+                
+                            <!--
+                            <li>
+                                <p class="md_item_image">
+                                    <a href="#"><img src="/eyebreath/images/sub_img/ad_8.jpg" alt="이미지설명"></a>
+                                </p>
+                                <p class="md_item_brand">
+                                    <a href="#">PARANOID</a>
+                                </p>
+                                <p class="md_item_name">
+                                    <a href="#">블랙 타키론 콘래드 C1 48mm 애쉬크로프트 & 파라노이드 안경테</a>
+                                </p>
+                                <p class="md_item_price">
+                                    <a href="#">183,000원</a>
+                                </p>
+                            </li>
+                            -->
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+        <!--중간 shop 광고 끝-->
+        <!--shop3 아이템 시작-->
+        <div id="shop3_wrap">
+            <div id="shop3">
+                <section id="shop3_item">
+                    <h2 class="hidden">제품 목록</h2>
+                    <ul id="shop3_item_list">
+                        <li>
+                            <p class="shop_image">
+                                <a href="#"><img src="/eyebreath/images/sub_img/sell18.jpg" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_brand">
+                                <a href="#">BUCKET LIST</a>
+                            </p>
+                            <p class="shop_name">
+                                <a href="#">버킷리스트 누베<br>티타늄 안경테 NUBE C2 50mm</a>
+                            </p>
+                            <p class="shop_price">
+                                <a href="#">69,000원</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="shop_image">
+                                <a href="#"><img src="/eyebreath/images/sub_img/sell19.jpg" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_brand">
+                                <a href="#">BUCKET LIST</a>
+                            </p>
+                            <p class="shop_name">
+                                <a href="#">버킷리스트 누베<br>티타늄 안경테 NUBE C2 50mm</a>
+                            </p>
+                            <p class="shop_price">
+                                <a href="#">69,000원</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="shop_image">
+                                <a href="#"><img src="/eyebreath/images/sub_img/sell20.jpg" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_brand">
+                                <a href="#">BUCKET LIST</a>
+                            </p>
+                            <p class="shop_name">
+                                <a href="#">버킷리스트 누베<br>티타늄 안경테 NUBE C2 50mm</a>
+                            </p>
+                            <p class="shop_price">
+                                <a href="#">69,000원</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="shop_image">
+                                <a href="#"><img src="/eyebreath/images/sub_img/sell17.jpg" alt="이미지설명"></a>
+                            </p>
+                            <p class="shop_brand">
+                                <a href="#">BUCKET LIST</a>
+                            </p>
+                            <p class="shop_name">
+                                <a href="#">버킷리스트 누베<br>티타늄 안경테 NUBE C2 50mm</a>
+                            </p>
+                            <p class="shop_price">
+                                <a href="#">69,000원</a>
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <!--shop3 아이템 끝-->
+        <!--eyemaker 광고시작-->
+        <div id="eyemaker_ad_wrap">
+            <section id="eyemaker_ad">
+                <h2 class="hidden">아이메이커 광고</h2>
+                <div id="eyemaker_ad_text">
+                    <p class="eyemaker_ad_title">EYE MAKER</p>
+                    <p class="eyemaker_ad_sub">안경, 가서 사지말고 편하게 온라인으로 사자. 쉽고 빠른 다운로드 어제보다 더 특별한 오늘을 위해.</p>
+                </div>
+                <div id="eyemaker_ad_view">
+                    <p class="eyemaker_ad_sub2">지금 바로 경험해보기</p>
+                    <button class="eyemaker_ad_btn">자세히 보기</button>
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <!--하단영역시작-->
+    <div id="footer_wrap">
+        <footer>
+            <ul id="footer_contents">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">입점상담</a></li>
+                <li><a href="#">제휴문의</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">채용정보</a></li>
+            </ul>
+            <div id="footer_comment">
+            <p id="comment">상호명: EYEBREATH 대표자:강라희
+                <br>인천시 서구 봉오대로318번지 18 14동 501호
+                <br>사업자 번호:000-00-00000
+                <br>OPEN AM9:00-18:00 OFFICE DAY: MON-FRI
+            </p>
+            </div>
+        </footer>
+    </div>
+    <!--하단영역끝-->
+
+</body>
+</html>

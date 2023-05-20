@@ -1,0 +1,202 @@
+/*기본설정시작*/
+a{
+    color: black;
+    text-decoration: none;
+}
+.hidden{
+    width: 1px;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+}
+button{
+    border: none;
+}
+/*기본설정끝*/
+/*바로가기메뉴설정시작*/
+ul.skipmenu_list li a:focus{
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    background: black;
+    color: white;
+    text-align: center;
+    z-index: 9999;
+}
+/*바로가기메뉴설정끝*/
+/*상단영역시작*/
+div#header_wrap{
+    width: 100%;
+    min-width: 768px;
+    height:145px; /*닫혔을때 높이 145 px 열리면 350 */
+     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c2c2c+0,edeef0+42,000000+99,2989d8+100,000000+100 */
+     background: #2c2c2c; /* Old browsers */
+     background: -moz-linear-gradient(top,  #000000 0%, #000000 30px, #000000 30px, #000000 145px, rgba(0,0,0,0.7) 115px, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
+     background: -webkit-linear-gradient(top,  #000000 0%,#000000 30px,#000000 30px,#000000 145px,rgba(0,0,0,0.7) 115px, rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(to bottom,  #000000 0%,#000000 30px,#000000 30px,#000000 145px,rgba(0,0,0,0.7) 115px, rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c2c2c', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+     position:fixed;
+     left:0px;
+     top:0px; 
+     z-index:10;
+     
+}
+header{
+    width: 1200px;
+    min-width: 768px;
+    height: 100%;
+    margin: 0px auto;
+    position: relative; 
+    left: 0px;
+    top: 0px;
+}
+h1#logo{
+    width: 252px;
+    height: 49px;
+    position: absolute;
+    left: 0px;
+    top: 76px;
+}
+h1#logo img{
+    width: 100%;
+}
+nav#topmenu{
+    width: 189px;
+    height: 37px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+ul#topmenu_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul#topmenu_list>li>a{
+    font: normal 0.875em "Nanum Gothic KR";
+    display: block;
+    color: #ffffff;
+}
+nav#mainmenu{
+    width: 53.08%;
+    height: 97px; 
+    position: absolute;
+    left: 46.33%;
+    top: 72px;
+}
+ul#mainmenu_list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+ul#mainmenu_list>li{
+    width: 20%;
+    height: 70px;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    left: 0px;
+    top:0px; 
+}
+
+ul#mainmenu_list>li::after{
+    content:"";
+    display:block;
+    width:80%;
+    height:3px; 
+    background:white; 
+    position:absolute;
+    left:10%; 
+    top:70px;
+    transform:scale(0,1);
+    transition:0.2s ease-out; 
+}
+ul#mainmenu_list>li.selected::after{
+    transform:scale(1,1);
+}
+
+ul#mainmenu_list>li>a{
+    font: normal 1em "Nanum Gothic KR";
+    color:#ffffff;
+    position:relative;
+    left:0px;
+    top:0px;
+    transition:0.2s ease-out;  
+}
+ul#mainmenu_list>li.selected>a{
+    top:-10px; 
+    color:#aace81; 
+}
+
+ul#mainmenu_list>li.selected .submenu_list{
+    background:rgba(255,255,255,0.2)
+}
+
+ul.submenu_list{
+    width: 100%;
+    height:175px;    
+    position: absolute;
+    left: 0px;
+    top: 73px;
+    opacity:0; 
+    display: none;
+}
+
+ul.submenu_list>li>a{
+    font:normal 12px "Nanum Gothic KR";
+    color: #ffffff;
+    transition:0.2s ease-out; 
+    position:relative;
+    left:0px;
+    top:0px; 
+}
+ul.submenu_list>li>a:hover{
+    color:#aace81; 
+    top:0px; 
+}
+
+
+/*컨텐츠영역공통속성시작*/
+div#contents_wrap{
+    width: 100%;
+    min-width: 768px;
+    min-height: 1200px;
+    background: #ffffff;
+}
+/*컨텐츠영역공통속성끝*/
+
+/*하단영역시작*/
+div#footer_wrap{
+    width: 100%;
+    height: 120px;
+    background: #2c2c2c;
+}
+footer{
+    width: 980px;
+    height: 100%;
+    margin: 0px auto; /*가운데정렬*/
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    header{
+        width: 100%;
+    }
+}
+
