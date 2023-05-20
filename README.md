@@ -36,8 +36,15 @@ eyebreath의 기획의도는 오프라인으로 구매하기엔 시간적, 공�
 - Figma 툴을 활용한 모바일 UIUX 디자인 및 프로토타입 개발
 
 <aside>
-✔️ 유튜브 링크
+✔️ 유튜브 링크 및 이미지
 
 </aside>
 
 [https://youtu.be/hDLC-8g9JQQ](https://youtu.be/hDLC-8g9JQQ)
+
+<img width="1788" alt="image" src="https://github.com/raheekang/eyebreath/assets/134080499/34645dae-d3ce-4f55-88d0-87ddb97e5a8a">
+
+
+<img width="1782" alt="image" src="https://github.com/raheekang/eyebreath/assets/134080499/6aec9d3c-c511-4c54-a7dc-b96cc06830e3">
+
+<img width="1786" alt="image" src="https://github.com/raheekang/eyebreath/assets/134080499/506a8fd4-4094-4987-bd3e-dbd5dc885752">
